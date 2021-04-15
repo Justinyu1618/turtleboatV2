@@ -1,1 +1,1 @@
-web: npm run gunicorn
+web: npm run prod 
