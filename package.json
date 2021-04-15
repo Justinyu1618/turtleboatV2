@@ -2,63 +2,19 @@
   "name": "turtleboat",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^12.20.5",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
-    "axios": "^0.21.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "firebase": "^8.3.0",
-    "firebase-admin": "^9.5.0",
-    "node-sass": "^5.0.0",
-    "qs": "^6.9.6",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-linkedin-login-oauth2": "^1.0.9",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-token-auth": "^1.1.8",
-    "simple-oauth2": "^4.2.0",
-    "typescript": "^4.2.3",
-    "web-vitals": "^1.0.1"
+    "concurrently": "^4.1.1",
+    "prettier": "^1.19.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "tsc && nodemon --inspect --enable-source-maps build/src/server.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/body-parser": "^1.19.0",
-    "@types/express": "^4.17.11",
-    "@types/react-router-dom": "^5.1.7",
-    "nodemon": "^2.0.6",
-    "ts-loader": "^8.0.18",
-    "webpack-cli": "^4.5.0"
+    "start": "cp .env client/.env; cd client && yarn start",
+    "prebuild": "python prebuild.py",
+    "build": "cd client && yarn install && yarn build",
+    "postbuild": "cp -r client/build server/",
+    "gunicorn": "gunicorn run_server:app",
+    "dev-server": "gunicorn -b 127.0.0.1:5000 --reload run_dev_server:app",
+    "prod-server": "gunicorn -b 127.0.0.1:5000 --reload run_server:app",
+    "dev": "concurrently --kill-others \"yarn start\" \"npm run dev-server\"",
+    "prod": "concurrently --kill-others \"yarn start\" \"npm run prod-server\""
   }
 }

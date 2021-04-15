@@ -1,0 +1,21 @@
+.pillar {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 5px;
+    }
+    img {
+      width: 15%;
+    }
+  }
+}

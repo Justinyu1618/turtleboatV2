@@ -1,0 +1,30 @@
+.wonder-square-container {
+  position: relative;
+  cursor: pointer;
+  .wonder-square {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    &:hover {
+      border-color: rgb(80, 171, 255);
+    }
+  }
+
+  .ws-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}

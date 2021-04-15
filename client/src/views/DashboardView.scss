@@ -1,0 +1,14 @@
+#DashboardView {
+  display: flex;
+  height: 100%;
+  background-color: #e1e1e1;
+  .LeftbarNav-container {
+    width: 280px;
+  }
+
+  .Gameboard-container {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+  }
+}
