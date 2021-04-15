@@ -1,3 +1,4 @@
 .env
 src/service-account.js
 node_modules
+__pycache__/*

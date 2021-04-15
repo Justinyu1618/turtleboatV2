@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 interface ProjectViewProps {}
 
-const PROJECTS = [{ name: "Test Project" }, { name: "Test Projects 2" }];
+const PROJECTS = [{ name: "Test Project" }];
 
 const ProjectView: React.FC<ProjectViewProps> = ({}) => {
   const projects: any[] = [];

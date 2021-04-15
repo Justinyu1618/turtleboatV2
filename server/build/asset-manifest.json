@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d04c1d93.chunk.css",
+    "main.js": "/static/js/main.1720cca0.chunk.js",
+    "main.js.map": "/static/js/main.1720cca0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f4ca0ccc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f4ca0ccc.js.map",
+    "static/css/2.14c2b19e.chunk.css": "/static/css/2.14c2b19e.chunk.css",
+    "static/js/2.50824552.chunk.js": "/static/js/2.50824552.chunk.js",
+    "static/js/2.50824552.chunk.js.map": "/static/js/2.50824552.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.88a06c8d108004c1bf3a59efbe315e03.js": "/precache-manifest.88a06c8d108004c1bf3a59efbe315e03.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.14c2b19e.chunk.css.map": "/static/css/2.14c2b19e.chunk.css.map",
+    "static/css/main.d04c1d93.chunk.css.map": "/static/css/main.d04c1d93.chunk.css.map",
+    "static/js/2.50824552.chunk.js.LICENSE": "/static/js/2.50824552.chunk.js.LICENSE",
+    "static/media/index.scss": "/static/media/Roboto-Regular.54a91b06.ttf",
+    "static/media/account-icon.png": "/static/media/account-icon.68452331.png",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/note.svg": "/static/media/note.ce96b1e4.svg",
+    "static/media/pillar.svg": "/static/media/pillar.5e79206b.svg",
+    "static/media/turtleboat.svg": "/static/media/turtleboat.a6dbe772.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4ca0ccc.js",
+    "static/css/2.14c2b19e.chunk.css",
+    "static/js/2.50824552.chunk.js",
+    "static/css/main.d04c1d93.chunk.css",
+    "static/js/main.1720cca0.chunk.js"
+  ]
+}

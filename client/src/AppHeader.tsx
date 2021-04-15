@@ -43,7 +43,7 @@ const AppHeader: React.FC = () => {
     <div id="AppHeader">
       <div className="logo-container">
         <img src={logo} />
-        <Link to="projects">Turtleboat</Link>
+        <Link to="/projects">Turtleboat</Link>
       </div>
 
       <div className="account-container">
